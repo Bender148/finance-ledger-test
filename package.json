@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "parcel src/*.html",
-		"build": "parcel build src/*.html --public-url /finance-ledger-test/"
+		"build": "parcel build src/*.html --public-url /finance-ledger-test/",
+		"predeploy": "npm run build",
+		"deploy": "netlify deploy -p"
 	},
 	"repository": {
 		"type": "git",
@@ -17,11 +19,16 @@
 		"url": "https://github.com/Bender148/finance-ledger-test/issues"
 	},
 	"homepage": "https://github.com/Bender148/finance-ledger-test#readme",
-	"dependencies": {
+	"devDependencies": {
 		"parcel-bundler": "^1.12.5",
 		"parcel-plugin-handlebars-precompile": "^1.0.2",
 		"parcel-plugin-nuke-dist": "^1.0.1",
 		"posthtml-include": "^1.7.4",
 		"sass": "^1.54.0"
+	},
+	"dependencies": {
+		"basiclightbox": "^5.0.4",
+		"jquery": "^3.6.0",
+		"lightbox2": "^2.11.3"
 	}
 }
