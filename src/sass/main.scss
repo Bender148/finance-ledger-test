@@ -2,8 +2,9 @@
 @import './variables/placeholders';
 
 //Components
-@import './components/common';
+@import './components/backdrop';
 @import './components/container';
+@import './components/base';
 
 //Partials
 @import './partials/header';
